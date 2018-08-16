@@ -9,36 +9,32 @@ Created on Thu Aug 16 10:36:43 2018
 
 """
 
-here we implement Karatsuba algorithm for n-digit number multiplication where /
-n is large.
+here we implement Karatsuba algorithm for n-digit number multiplication where n is large.
 
-the idea behind Karatsuba algorithm is reducing the traditional n^2 single-digit /
-multiplications to n^(log2(3)) single-digit multiplications.
+the idea behind Karatsuba algorithm is reducing the traditional n^2 single-digit multiplications
+to n^(log2(3)) single-digit multiplications.
 
 
 key point ==> the right parts of the splited numbers must have the same lengh!
 otherwise the algorithm will be wrong in terms of computation logic.
 
 
-
 careful about the negative numbers:
-    * HOW negative numbers doing % operator??? (splitting process)
-    * negative numbers will always satisfy the base case in Karatsuba function
+    * HOW negative numbers behave under % operator??? (in the split function)
+    * negative numbers will always satisfy the base case in my defined Karatsuba function
     * automatic floored using // operator
 
-since there are so many problems that can be arised when the input are negative /
-numbers, i decide to abs() the input and then return the right result /
-according to the sign of the original input.
 
+since there are so many problems that can be arised when the input are negative numbers,
+I decide to abs() the input and then return the final result according to the sign of the original input.
 
 """
 
 
 def split(absnum1, absnum2):
-    """split the n-digit numbers into 2 parts and with the same length of
-    the right parts
-    * negative numbers also will cause some trouble when using the % operator
-    * careful the automatic round operation of // operator for negative numbers
+    """split the n-digit numbers into 2 parts and with the same length of the right parts
+    * negative numbers will cause some trouble when using the % operator
+    * careful the automatic floor operation of the // operator for negative numbers
     """
     
     l = max(len(str(absnum1)), len(str(absnum2)))
@@ -50,19 +46,19 @@ def split(absnum1, absnum2):
     
     absnum2_l = absnum2 // (10**split_point)
     absnum2_r = absnum2 % (10**split_point)
-    return absnum1_l, absnum1_r, absnum2_l, absnum2_r, split_point
+    
+   return absnum1_l, absnum1_r, absnum2_l, absnum2_r, split_point
 
 
 
 
 def Karatsuba(num1, num2):
-    """recursively multiplicate the splited numbers"""
+    """recursively multiplicate the splitted numbers"""
     
     absnum1 = abs(num1)
     absnum2 = abs(num2)
     # negative is bad for the base case, change it to positive
-    # assign the result to a new variable oterwise there will be problem for /
-    # the if/else check
+    # assign the result to a new variable oterwise there will be problem for the if/else check at the end
     
     if absnum1 <= 10 or absnum2 <= 10:
         # here is the base case
