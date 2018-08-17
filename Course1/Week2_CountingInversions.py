@@ -6,12 +6,11 @@ Created on Fri Aug 17 09:30:06 2018
 """
 
 
-
-
-
 def split(listed_num):
     """
-    split the input into 2 parts, return the left and right part
+    divide the input into 2 parts, return the left and right part
+    it's alright if the 2 parts are not balanced, which situation
+    can be handled in mergeandCount() function
     """
 
     split_point = len(listed_num) // 2
@@ -21,13 +20,13 @@ def split(listed_num):
     return left, right
 
 
-
-def mergeSortandCount(ll, rl, count):
+def mergeandCount(ll, rl, count):
     """
     ll and rl are sorted lists
-    count holds the # of total inversions in the 2 sorted input lists
+    count holds the # of total inversions inherited from the 2 sorted
+    input lists
     we merge these 2 sorted list into 1 sorted list and count the inversions
-    between them
+    between them @ the same time
     return the merged sorted list and the counting of inversions
     """
     
@@ -88,7 +87,6 @@ def mergeSortandCount(ll, rl, count):
 
 
 
-
 def countInversions(listed_num):
     """
     list contains the number that we are working on
@@ -104,7 +102,7 @@ def countInversions(listed_num):
     ll, lc = countInversions(left)
     rl, rc = countInversions(right)
     count = lc + rc
-    sorted_num, count = mergeSortandCount(ll, rl, count)
+    sorted_num, count = mergeandCount(ll, rl, count)
     
     return sorted_num, count
 
@@ -136,25 +134,6 @@ print(count) # 2407905288
 %timeit countInversions(num_list)
 681 ms ± 19.7 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
 '''
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
