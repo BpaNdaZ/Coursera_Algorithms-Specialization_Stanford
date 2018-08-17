@@ -5,14 +5,12 @@ Created on Fri Aug 17 09:30:06 2018
 @author: BNZ
 """
 
-
 """
-
 when solving this problem, I used merge sort paradim, which is just another
 divide and conquer algorithm
 
 the runnning time analysis of merge&sort algorithm is not complex, which
-is nlog2(n)
+is O(nlogn)
 
 """
 
