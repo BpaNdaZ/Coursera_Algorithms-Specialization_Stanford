@@ -7,4 +7,8 @@ All the things, including Python, programming, and algorithms, that I learned ar
 
 ## Course1_Divide and Conquer, Sorting and Searching, and Randomized Algorithms
 
+1. Week1_Karatsuba Algorithm
 
+2. Week2_Counting Inversions
+
+3. Week3_Quick Sort
