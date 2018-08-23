@@ -12,3 +12,5 @@ All the things, including Python, programming, and algorithms, that I learned ar
 2. Week2_Counting Inversions
 
 3. Week3_Quick Sort
+
+4. Week4_Karger Minimum Cut
