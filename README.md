@@ -1,4 +1,4 @@
-# Coursera_Algorithms-Specialization_Stanford
+# Coursera_Algorithms-Specialization-Stanford
 
 This project contains all the codes that i wrote when I took the ***Algorithms Specialization by Stanford*** on Coursera which is instructed by Tim Roughgarden professor.
 
@@ -14,3 +14,14 @@ All the things, including Python, programming, and algorithms, that I learned ar
 3. Week3_Quick Sort
 
 4. Week4_Karger Minimum Cut
+
+
+## Course2_Graph Search, Shortest Paths, and Data Structures
+
+1. Week1_Kosaraju SCCs
+
+2. Week2_Dijkstra Shortest Path
+
+3. Week3_MaintainMedians
+
+4. Week4_Two Sum
