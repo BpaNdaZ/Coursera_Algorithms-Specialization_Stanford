@@ -16,3 +16,5 @@ In this way, Karatsuba algorithm reduces the classic n^2 single-digit number mul
 	- automatically floored under // operator
 	
 Since there are so many problems can be arised when the input has negative numbers, i decide to abs() the input and then return the right result based on the sign of the original input.
+
+And there is also a similar algorithm for matrix multiplication which is called **Strassen algorithm**. 
