@@ -25,3 +25,6 @@ All the things, including Python, programming, and algorithms, that I learned ar
 3. Week3_MaintainMedians
 
 4. Week4_Two Sum
+
+
+For the detailed information, knowledge and solution about each algorithm please see the corresponding folder!
