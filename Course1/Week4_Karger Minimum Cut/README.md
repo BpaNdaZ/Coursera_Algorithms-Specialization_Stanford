@@ -14,9 +14,10 @@ Logic of the algorithm:
 this randomized algorithm may return different answer for each run, so we need to run this algo for many times to make sure we can
 get the right minimum cut answer.
 
-when you implementing this algo with Python, the thing you should notice is that DO NOT iterating an iterator while changing it!!!
+when you implementing this algo with Python, the thing you should notice is that **DO NOT iterating an iterator while changing it!!!**
 
-'''
+
+
 after writing this piece, the thing I learned is
 "DO NOT ITERATING A LIST WHILE CHANGING IT!!!"
 there can be problem causing by certain special cases.
@@ -33,4 +34,3 @@ all the elements in l after the 1st 2 will be moved forward and the index of
 the 2nd 2 becomes the index of the 1st 2 and will be missed as i points to index
 2 which is pointing 3 during the iteration.
 
-'''
