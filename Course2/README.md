@@ -1,8 +1,11 @@
 
-1. Breadth First Search and Depth First Searth
-2. Topological Sort
-3. Strong Connected Components
-4. Single Source Shortest Path
+**Course2 Graph Search, Shortest Paths, and Data Structures**
+1. Week1 - Graph Search and Connectivity
+2. Week2 - Topological Sort/Kosaraju Algorithm for Computing SCCs
+3. Week3 - Heap/Dijkstra's Single Source Shortest Path Algorithm
+4. Week4 - Data Structures(Binary Search Trees/Hash Table/Bloom Filter)/2-SUM Problem
+
+
 
 
 
